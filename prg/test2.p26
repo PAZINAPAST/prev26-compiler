@@ -1,0 +1,15 @@
+// test2: nested function calls, static link
+// expect Result: 15
+
+fun main():int = 
+    let 
+        var a : int
+    in
+        a = 1,
+        a
+    end
+//typ arr = [-10] int
+
+//fun krneki(k:int, k : lepota):bool = (k + a) (9 -9 * not 2), (k + a, k * l, ^c + 0, p and c) 
+
+//Actual result: nothing

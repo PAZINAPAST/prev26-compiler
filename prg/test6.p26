@@ -1,0 +1,38 @@
+// test6: local variables, let expr
+// expect Result: 55
+
+typ s = [12]int
+
+
+fun kul(i : int, k : int): char = 
+    let 
+        typ j = int
+        var p : int
+    in 
+        let
+
+            var v: int
+        in
+            v = i + p
+        end,
+        'c'
+    end,
+    k = k + i + i,
+    'c'
+
+fun k(a : bool, b : bool): bool = if a > b then a else b end
+
+fun main():int =
+    let
+        var i:int
+        var s:int
+    in
+        i = 1,
+        s = 0,
+        while i <= 10 do
+            s = s + i,
+            i = i + 1
+        end,
+        s
+    end
+    

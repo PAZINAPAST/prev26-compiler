@@ -1,0 +1,11 @@
+// test20: fibonacci recursive
+// expect Result: 55
+// test20
+fun fib(n:int):int =
+    let var r:int in
+        if n <= 1 then r = n
+        else r = fib(n-1) + fib(n-2)
+        end,
+        r
+    end
+fun main():int = fib(10)

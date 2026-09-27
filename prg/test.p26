@@ -1,0 +1,46 @@
+typ str = (n : int, m : int)
+typ IntArray = [2] str
+fun putint(i:int):void
+fun putchar(c:char):void
+
+fun add(arr : IntArray) : int =
+	let var i : int
+		var j : int
+	in
+		i = 0,
+		j = 1,
+		arr[i].n + arr[j].m
+	end
+
+fun main() : int = 
+	let var arr : IntArray
+		var a : int
+		var b : int
+	in
+		arr[0].n = 10,
+		arr[0].m = 10,
+		arr[1].n = 20,
+		arr[1].m = 20,
+		a = 0,
+		b = 1,
+		add(arr)
+		//test(a, b, arr)
+	end
+
+//fun pr(k:int, l : int, ) : int =
+//	putint(k),
+//	putchar(' '),
+//	putint(l),
+//	putchar(';'),
+//	k + l
+
+
+//fun test(i : int, j : int, arr : IntArray) : int =
+//	putint(arr[i]),
+//	putchar(' '),
+//	putint(arr[j]),
+//	putchar(';'),
+//	arr[i] + arr[j]
+
+//Expected: 30
+//Result: nothing

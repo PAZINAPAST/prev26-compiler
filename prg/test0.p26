@@ -1,0 +1,75 @@
+// Define array type using the correct syntax
+typ IntArray = [10] int
+var v : int
+fun putint(i:int):void
+fun putchar(c:char):void
+
+fun swap(arr: IntArray, i: int, j: int): void = 
+  let
+    var temp: int
+  in
+    temp = arr[i],
+    arr[i] = arr[j],
+    arr[j] = temp
+  end
+
+fun partition(arr: IntArray, low: int, high: int): int = 
+  let
+    var pivot: int
+    var i: int
+    var j: int
+  in
+    pivot = arr[high],
+    i = low,
+    j = low,
+    while j < high do
+      if arr[j] < pivot then
+        swap(arr, i, j),
+        i = i + 1
+      end,
+      j = j + 1
+    end,
+    swap(arr, i, high),
+    i
+  end
+
+fun quicksort(arr: IntArray, low: int, high: int): void =
+  let
+    var p: int
+  in
+    if low < high then
+      p = partition(arr, low, high),
+      quicksort(arr, low, p - 1),
+      quicksort(arr, p + 1, high)
+    end
+  end
+
+fun main(): int = 
+  let
+    var arr: IntArray
+    var i: int
+  in
+    // Manual initialization since literal array syntax is likely limited
+    arr[0] = 9,
+    arr[1] = 3,
+    arr[2] = 7,
+    arr[3] = 6,
+    arr[4] = 4,
+    arr[5] = 1,
+    arr[6] = 0,
+    arr[7] = 8,
+    arr[8] = 2,
+    arr[9] = 5,
+    quicksort(arr, 0, 9),
+    i = 0,
+    while i < 10 do
+        putint(arr[i]),
+        putchar(' '),
+        i = i + 1
+    end,
+
+    // Return 0 to indicate success
+    0
+  end
+
+//works

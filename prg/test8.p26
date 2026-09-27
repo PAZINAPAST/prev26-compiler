@@ -1,0 +1,17 @@
+// test8: global variable
+// expect Result: 124
+var g:int
+
+fun add(a:int,  b: int):int = a + b
+
+fun main():int =
+    let
+        var c:int
+        var a:int
+    in
+        g = 20,
+        a = 22,
+        c = add(a, g), //42
+        a = add(c,g), //62
+        add(a, add(c, g))
+    end

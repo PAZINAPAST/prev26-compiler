@@ -1,0 +1,8 @@
+// test12: putchar builtin  
+// expect printed: A, Result: 0
+fun putchar(c:char):void
+fun main():int =
+    let var a:int in
+        putchar('A'),
+        0
+    end

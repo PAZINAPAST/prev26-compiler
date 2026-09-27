@@ -1,0 +1,12 @@
+// test16
+fun main():int =
+    let
+        var a:int
+        var b:int
+        var r:int
+    in
+        a = 5,
+        b = 10,
+        if a < b then r = 1 else r = 0 end,
+        r
+    end

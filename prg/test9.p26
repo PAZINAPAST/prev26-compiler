@@ -1,0 +1,15 @@
+// test9: array indexing and assignment
+// expect Result: 30
+fun putint(i:int):void
+fun putchar(c:char):void
+
+
+fun main():int =
+    let
+        var uni : {a : char, b : int}
+    in
+        uni.b = 65,
+        putchar(uni.a),
+        putint(uni.b),
+        uni.b
+    end

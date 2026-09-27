@@ -1,0 +1,16 @@
+# Java compiled output
+bin/
+*.class
+
+# Generated ANTLR sources
+src/prev26lang/phase/lexan/Prev26Lexer.java
+src/prev26lang/phase/lexan/Prev26Lexer.java-orig
+src/prev26lang/phase/synan/Prev26Parser.java
+src/prev26lang/phase/synan/Prev26Parser.java-orig
+
+# Generated compiler output
+prg/*.xml
+prg/*.html
+
+# Temporary files
+*~

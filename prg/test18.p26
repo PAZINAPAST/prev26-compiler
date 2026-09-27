@@ -1,0 +1,35 @@
+// test18: while with break condition, array bubble sort 3 elements
+// expect Result: 0, printed sorted: 1 2 3
+fun putint(i:int):void
+fun putchar(c:char):void
+fun main():int =
+    let
+        var a:[3]int
+        var i:int
+        var j:int
+        var tmp:int
+    in
+        a[0] = 3,
+        a[1] = 1,
+        a[2] = 2,
+        i = 0,
+        while i < 3 do
+            j = 0,
+            while j < 2 - i do
+                if a[j] > a[j+1] then
+                    tmp = a[j],
+                    a[j] = a[j+1],
+                    a[j+1] = tmp
+                end,
+                j = j + 1
+            end,
+            i = i + 1
+        end,
+        i = 0,
+        while i < 3 do
+            putint(a[i]),
+            putchar(' '),
+            i = i + 1
+        end,
+        0
+    end

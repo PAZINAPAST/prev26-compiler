@@ -1,0 +1,10 @@
+// test7
+// 120 
+fun fact(n:int):int =
+    let var r:int in
+        if n <= 1 then r = 1
+        else r = n * fact(n - 1)
+        end,
+        r
+    end
+fun main():int = fact(5)

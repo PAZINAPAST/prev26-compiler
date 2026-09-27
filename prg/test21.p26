@@ -1,0 +1,18 @@
+fun add(a:int, b:int, t : bool) : int =
+    if t then a + b else 0 end 
+
+fun main():int = 
+    let 
+        var f:bool
+        var r:int
+        var a: int
+        var b : int
+        var arr : [10] int
+    in 
+        a = 6,
+        b= 8,
+        r = add(7, a + b, true),
+        arr[2] = 100,
+        arr[8-6]
+    end
+        

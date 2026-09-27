@@ -1,0 +1,10 @@
+// test14: struct access
+// expect Result: 30
+fun main():int =
+    let
+        var s:(x:int, y:int)
+    in
+        s.x = 10,
+        s.y = 20,
+        s.x + s.y
+    end

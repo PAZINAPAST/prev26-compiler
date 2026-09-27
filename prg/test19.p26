@@ -1,0 +1,12 @@
+// test19: exit builtin
+// expect: program exits with code 0, nothing printed after exit
+fun exit():void
+fun putint(i:int):void
+fun main():int =
+    let var a:int in
+        a = 5,
+        putint(a),
+        exit(),
+        putint(999),
+        0
+    end

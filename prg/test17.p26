@@ -1,0 +1,5 @@
+// test17: multiple nested calls
+// expect Result: 22
+fun double(x:int):int = x * 2
+fun inc(x:int):int = x + 1
+fun main():int = double(inc(double(5)))

@@ -1,0 +1,16 @@
+
+
+
+fun main():int = 
+    let
+        var i : int
+        fun f (x:int):int = 
+            let 
+                fun p(i:int) : int = (i = 5, i)
+            in
+                p(x)
+            end
+    in
+        i = 0,
+        f(i)
+    end 

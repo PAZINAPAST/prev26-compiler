@@ -1,0 +1,12 @@
+// test15: pointer usage
+// expect Result: 99
+fun main():int =
+    let
+        var a: [2] int
+        var p:^int
+    in
+        a[0] = 99,
+        a[1] = 100,
+        p = ^a[0], 
+        p^
+    end

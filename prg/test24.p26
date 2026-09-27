@@ -1,0 +1,22 @@
+fun putint(i:int):void
+
+fun main(): int = 
+    let 
+        var i : int
+        var b : bool
+    in
+        i = 0,
+        b = true,
+
+        if b then
+            let
+                fun f(a:int): int = a + i
+            
+            in
+
+                putint(f(5))
+
+            end
+        end,
+        0
+    end

@@ -1,0 +1,57 @@
+typ Seznam = { a:int, ptr:^Seznam}
+fun putint(i:int):void
+
+fun main():int =
+    let
+        var i:int
+       
+    in
+        i = -1,
+        let
+            var m:int
+            var n:int
+            fun add( a:int, b:int):int = a + b
+            fun mul(a:int, b:int):int =
+                let 
+                    var i:int
+                    var r:int
+                    fun div(p:int, d:int):int = p / d
+                in
+                    i = 0,
+                    r = 0,
+                    while i < b do
+                        r = r + a,
+                        i = i + 1
+                    end,
+                    let 
+                        var v : int
+                    in
+                        v = add(i, r),
+                        putint(v),
+                        v = div(v, r),
+                        putint(v),
+                        v
+                    end,
+                    r
+                end
+
+        in
+            m = 5,
+            let
+                var k: int
+                
+            in
+
+                k = 5,
+                let
+                    var r:int
+                in
+                    r = add(m,k),
+                    putint(r),
+                    r = mul(m, k),
+                    r
+                     
+                end
+            end
+        end
+    end

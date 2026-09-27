@@ -1,0 +1,11 @@
+// test13: getint and putint builtins
+// input: 7
+// expect printed: 8, Result: 0
+fun putint(i:int):void
+fun getint():int
+fun main():int =
+    let var a:int in
+        a = getint(),
+        putint(a + 1),
+        0
+    end

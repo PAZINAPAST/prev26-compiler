@@ -1,0 +1,15 @@
+// test5: while loop
+// expect Result: 10
+fun main():int =
+    let
+        var i:int
+        var s:int
+    in
+        i = 0,
+        s = 0,
+        while i < 5 do
+            s = s + i,
+            i = i + 1
+        end,
+        s
+    end

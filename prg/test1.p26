@@ -1,0 +1,22 @@
+var a : int
+var b : int
+
+fun add(prvi : int, drugi : int) : int = prvi + drugi
+fun putint(x: int) : void
+
+fun main() : int = 
+  let 
+    var p : int
+    var p2 : int
+    fun add2(prvi : int, drugi : int) : int = prvi + drugi + 5
+  in
+    a = 5,
+    b = 4,
+    // p = 9
+    p = add(a, b),
+    // p2 = 25
+    p2 = add2(10, 5 + a),
+    // out = 34
+    putint(add(p, p2)),
+    0
+  end
